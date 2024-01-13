@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 13 Jan 2024 pada 11.39
+-- Waktu pembuatan: 13 Jan 2024 pada 12.18
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -48,6 +48,17 @@ CREATE TABLE `space_objects` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Dumping data untuk tabel `space_objects`
+--
+
+INSERT INTO `space_objects` (`id`, `nama`, `umur`, `tinggi`) VALUES
+(7, 'Rizki Hidayat ', 19, 176),
+(8, 'Rizka ', 22, 165),
+(9, 'Riski', 22, 195),
+(10, 'Wahyu', 22, 170),
+(11, 'Kun', 25, 169);
+
+--
 -- Indexes for dumped tables
 --
 
@@ -77,9 +88,10 @@ ALTER TABLE `planet_objects`
 -- AUTO_INCREMENT untuk tabel `space_objects`
 --
 ALTER TABLE `space_objects`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
